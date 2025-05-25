@@ -21,7 +21,7 @@ local DEFAULT_OPTIONS = {
 }
 
 local function LoadFromUrl(x)
-    local BASE_URL = "https://raw.githubusercontent.com/infyiff/backup/refs/heads/main/AdvancedDecompilerV3/%s.lua"
+    local BASE_URL = "https://raw.githubusercontent.com/CoreBIox/backup/main/AdvancedDecompilerV3/%s.lua"
     local success, result = pcall(game.HttpGet, game, string.format(BASE_URL, x), true)
     if not success then warn(`({math.random()}) MODULE FAILED TO LOAD FROM URL: {result}.`) return end
     local lsSuccess, lsResult = pcall(loadstring, result)
